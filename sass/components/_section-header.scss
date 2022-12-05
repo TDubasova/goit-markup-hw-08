@@ -1,0 +1,211 @@
+.header {
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ececec;
+}
+
+.header__container {  
+    position: relative;
+    display: flex;
+    justify-content: space-between;        
+    align-items: center;
+    height: 60px;
+    background-color: $body-color;
+
+    @media screen and (min-width: 768px) {
+        height: 80px;
+    }    
+}
+
+.navigation {
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 302px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex; 
+        align-items: center;
+        margin-left: 87px;
+        margin-right: 96px;
+    }
+}
+
+.navigation__list {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: max-content;
+    
+    &:not(:last-child) {
+        margin-bottom: 32px;
+
+        @media screen and (min-width: 767px) {
+            margin-right: 50px;
+            margin-bottom: 0;
+        }
+    }        
+}
+
+.navigation__link {
+
+    color: $primery-color;
+    letter-spacing: 0.02em;
+    @extend %font-header;
+
+    @media screen and (max-width: 767px) {
+        @include font-menu (40px, 47px);
+    }
+    
+    @media screen and (min-width: 768px) {
+        transition: $color;
+    }
+           
+    &:hover,
+    &:focus {
+        color: $secondery-color;
+    }
+}
+
+.navigation__link--curent {
+    color: $secondery-color;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 46px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $secondery-color;
+        border-radius: 2px;
+    }
+}
+
+.contacts {
+    @media screen and (max-width: 1199px) {
+        display: block;
+        margin: 0;
+        text-align: left;
+        margin-bottom: 64px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.contacts__item {
+
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}
+
+.contacts__link {
+    @extend %font-header;
+    color: $additional-color;
+    fill: $additional-color;
+    transition: $color, $fill;
+
+    @media screen and (max-width: 767px) {
+        @include font-menu (24px, 0.86);   
+    }
+
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 0.86;
+    }
+
+    @media screen and (nin-width: 1200px) {
+        display: inline-flex;
+        align-items: center;
+    }   
+    
+    &:hover,
+    &:focus {
+        color: $secondery-color;
+        fill: $secondery-color;
+    }
+}
+
+.contacts__link--first {
+    color: $secondery-color;
+    @include font-menu (34px, 1.4);
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.contacts__link--second {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.contacts__icon {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-right: 8px;
+    }
+}
+
+.networks-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.networks-header__item {
+    width: max-content;
+    @include font-menu (18px, 1.22);
+    
+    &:not(:last-child) {
+        padding-right: 10px;
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: rgba(33, 33, 33, 0.2);
+    }
+
+    &:not(:first-child) {
+        padding-left: 10px;
+    }
+}
+
+.networks-header__link {
+    color: $secondery-color;
+    display: block;
+}

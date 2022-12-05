@@ -1,0 +1,91 @@
+.team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f5f4fa;
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    &__list {
+        @media screen and (min-width: 768px) {
+                display: flex;
+                flex-wrap: wrap;
+                margin: -15px; 
+        }
+    }
+}
+
+.team__title {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+}
+
+.member__card {
+    display: block;
+    width: 450px;
+    box-shadow:
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+}
+
+.member__card:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+}
+
+.member__photo {
+    width: 450px;
+    display: block;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }   
+}
+
+.member__information {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    background-color: $body-color;
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 30px;
+    }
+}
+
+.member__name {
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    @include font-size16 (500, 1.19)
+}
+
+.member__position {
+    color: $additional-color;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    @include font-size16 (400, 1.19)
+}

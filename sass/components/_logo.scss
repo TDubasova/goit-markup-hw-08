@@ -1,0 +1,19 @@
+.logo {
+    display: block;
+    color: $secondery-color;
+    @extend %font-logo; 
+    
+    
+}
+
+.logo__second {
+    color: $logo-color;
+}
+
+.logo__second--invert {
+    
+    color: $body-color;
+}
+
+
+
