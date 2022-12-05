@@ -38,35 +38,47 @@
 }
 
 
-// @media (min-device-pixel-ratio: 2),
-// (min-resolution: 192dpi),
-// (min-resolution: 2dppx) {
-//     .herou__container {
-//         @media screen and (min-width: 480) {
-//                 background-image:
-//                     linear-gradient(to right,
-//                         rgba(47, 48, 58, 0.4),
-//                         rgba(47, 48, 58, 0.4)),
-//                     url(../images/Herou-480_@2x.jpg);
-//             }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .herou__container {
+        @media screen and (min-width: 480) {
+                background-image:
+                    linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/Herou-480_@2x.jpg);
+            }
+        }
+    }
 
-//         @media screen and (min-width: 768) {
-//                 background-image:
-//                     linear-gradient(to right,
-//                         rgba(47, 48, 58, 0.4),
-//                         rgba(47, 48, 58, 0.4)),
-//                     url(../images/Herou-768_@2x.jpg);
-//             }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .herou__container {
+        @media screen and (min-width: 768) {
+                background-image:
+                    linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/Herou-768_@2x.jpg);
+            }
+        }
+    }
 
-//         @media screen and (min-width: 1200) {
-//             background-image:
-//                 linear-gradient(to right,
-//                     rgba(47, 48, 58, 0.4),
-//                     rgba(47, 48, 58, 0.4)),
-//                 url(../images/Herou-1200_@2x.jpg);
-//         }
-//     }
-// }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .herou__container {
+        @media screen and (min-width: 1200) {
+            background-image:
+                linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/Herou-1200_@2x.jpg);
+        }
+    }
+}
 
 .herou__title {
     display: block;
