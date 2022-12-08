@@ -537,21 +537,24 @@
         <!-- Підписка на розсилку -->
         <form class="subscription">
           <b class="subscription__title">Підпишіться на розсилку</b>
-          <input
-            class="subscription__input"
-            type="email"
-            name="subscription"
-            placeholder="E-mail"
-          />
-          <button class="button subscription__button" type="submit">
-            <b class="button__title">Підписатися</b>
-            <svg class="button__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+          <div class="subscription__overlay">
+            <input
+              class="subscription__input"
+              type="email"
+              name="subscription"
+              placeholder="E-mail"
+            />
+            <button class="button subscription__button" type="submit">
+              <b class="button__title">Підписатися</b>
+              <svg class="button__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
+
     <script src="./js/menu.js"></script>
   </body>
 </html>
