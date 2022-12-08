@@ -19,9 +19,12 @@
 
 .features__item {
     display: block;
-    width: 450px;
     height: 226px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
 
     @media screen and (min-width: 768px) {
         width: 354px;
@@ -39,10 +42,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
     height: 120px;
     background-color: #f5f4fa;
     border-radius: 4px;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
 
     @media screen and (min-width: 768px) {
         width: 354px;

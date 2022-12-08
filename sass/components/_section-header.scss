@@ -1,12 +1,12 @@
 .header {
+    position: relative;
     background-color: white;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #ececec;
 }
 
-.header__container {  
-    position: relative;
+.header__container { 
     display: flex;
     justify-content: space-between;        
     align-items: center;
@@ -157,7 +157,11 @@
 
 .contacts__link--first {
     color: $secondery-color;
-    @include font-menu (34px, 1.4);
+
+    @media screen and (min-width: 480px) {
+        @include font-menu (34px, 1.4);
+    }
+    
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -181,9 +185,10 @@
 
 .networks-header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-
+    
     @media screen and (min-width: 768px) {
         display: none;
     }

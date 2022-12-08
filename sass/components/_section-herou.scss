@@ -11,18 +11,17 @@
         linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/Herou-480.jpg);   
+        url(../images/Herou_mobl1x.jpg);   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     @media screen and (min-width: 768px) {
-        max-width: 768px;
         background-image:
             linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../images/Herou-768.jpg);
+            url(../images/Herou_tab1x.jpg);
     }
 
     @media screen and (min-width: 1200px) {
@@ -33,7 +32,7 @@
             linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../images/Herou-1200.jpg);
+            url(../images/Herou_desctop1x.jpg);
     }
 }
 
@@ -42,12 +41,12 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .herou__container {
-        @media screen and (min-width: 480) {
+        @media screen and (max-width: 767px) {
                 background-image:
                     linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-                    url(../images/Herou-480_@2x.jpg);
+                    url(../images/Herou_mobl2x.jpg);
             }
         }
     }
@@ -56,12 +55,12 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .herou__container {
-        @media screen and (min-width: 768) {
+        @media screen and (max-width: 1199px) {
                 background-image:
                     linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-                    url(../images/Herou-768_@2x.jpg);
+                    url(../images/Herou_tab2x.jpg);
             }
         }
     }
@@ -70,12 +69,12 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .herou__container {
-        @media screen and (min-width: 1200) {
+        @media screen and (min-width: 1200px) {
             background-image:
                 linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../images/Herou-1200_@2x.jpg);
+                url(../images/Herou_desctop2x.jpg);
         }
     }
 }

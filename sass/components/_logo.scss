@@ -1,9 +1,7 @@
 .logo {
     display: block;
     color: $secondery-color;
-    @extend %font-logo; 
-    
-    
+    @extend %font-logo;    
 }
 
 .logo__second {
@@ -11,7 +9,6 @@
 }
 
 .logo__second--invert {
-    
     color: $body-color;
 }
 
