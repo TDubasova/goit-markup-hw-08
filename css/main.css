@@ -1623,7 +1623,7 @@ ul {
 .subscription {
   display: block;
 }
-@media screen and (min-width: 450px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .subscription {
     width: 450px;
   }
