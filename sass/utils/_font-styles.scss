@@ -52,8 +52,7 @@
 
 %font-form-title {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    font-size: calc(14px + 6 * (100vw / 1200));
     text-align: center;
     align-items: center;
     letter-spacing: 0.03em;
@@ -101,4 +100,5 @@
     font-weight: 500;
     font-size: $font-size;
     line-height: $line-height;
+    letter-spacing: 0.02em;
 }

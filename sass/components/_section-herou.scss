@@ -3,7 +3,7 @@
 }
 
 .herou__container {
-    width: 100%;
+    height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;  
     background-color: $footer-color;
@@ -36,12 +36,11 @@
     }
 }
 
-
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .herou__container {
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: 480px) and (max-width: 767px) {
                 background-image:
                     linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
@@ -55,7 +54,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .herou__container {
-        @media screen and (max-width: 1199px) {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
                 background-image:
                     linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),

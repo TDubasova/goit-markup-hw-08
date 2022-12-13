@@ -58,9 +58,12 @@
           <ul class="contacts">
             <li class="contacts__item">
               <a
-                class="contacts__link contacts__link--first"
+                class="contacts__link contacts__link--tel"
                 href="tel:+380961111111"
-                >+38 096 111 11 11</a
+                ><svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
             <li class="contacts__item">
@@ -69,16 +72,6 @@
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts__item">
-              <a
-                class="contacts__link contacts__link--second"
-                href="tel:+380961111111"
-                ><svg class="contacts__icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
               >
             </li>
           </ul>
@@ -160,16 +153,16 @@
                   <img
                     class="project__img"
                     srcset="
+                      ./images/portfolio/project1_mobl1x.jpg    480w,
+                      ./images/portfolio/project1_mobl2x.jpg    960w,
                       ./images/portfolio/project1_tab1x.jpg     384w,
-                      ./images/portfolio/project1_desctop1x.jpg 400w,
-                      ./images/portfolio/project1_mobl1x.jpg    450w,
                       ./images/portfolio/project1_tab2x.jpg     768w,
-                      ./images/portfolio/project1_desctop2x.jpg 800w,
-                      ./images/portfolio/project1_mobl2x.jpg    900w
+                      ./images/portfolio/project1_desctop1x.jpg 400w,
+                      ./images/portfolio/project1_desctop2x.jpg 800w
                     "
-                    src="./images/portfolio/project1_desctop1x.jpg"
+                    src="./images/portfolio/project1_mobl1x.jpg"
                     alt="Відкритий ноутбук із зображенням сторінки вебсайту"
-                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 384px, (max-width: 767px) 480px, 100vw"
                   />
                   <div class="project__overlay">
                     <p class="project__description">
@@ -183,6 +176,8 @@
                 <div class="project__annotation">
                   <h2 class="project__title">Технокряк</h2>
                   <p class="project__text">Веб-сайт</p>
+                  <br class="project__element" />
+                  <br class="project__element" />
                 </div>
               </a>
             </li>
@@ -193,16 +188,16 @@
                   <img
                     class="project__img"
                     srcset="
-                      ./images/portfolio/project2_tab1x.jpg     354w,
-                      ./images/portfolio/project2_desctop1x.jpg 370w,
-                      ./images/portfolio/project2_mobl1x.jpg    450w,
-                      ./images/portfolio/project2_tab2x.jpg     708w,
-                      ./images/portfolio/project2_desctop2x.jpg 740w,
-                      ./images/portfolio/project2_mobl2x.jpg    900w
+                      ./images/portfolio/project2_mobl1x.jpg    480w,
+                      ./images/portfolio/project2_mobl2x.jpg    960w,
+                      ./images/portfolio/project2_tab1x.jpg     384w,
+                      ./images/portfolio/project2_tab2x.jpg     768w,
+                      ./images/portfolio/project2_desctop1x.jpg 400w,
+                      ./images/portfolio/project2_desctop2x.jpg 800w
                     "
-                    src="./images/portfolio/project2_desctop1x.jpg"
+                    src="./images/portfolio/project2_mobl1x.jpg"
                     alt="Два волейболіста з м'ячем у стрибку"
-                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 384px, (max-width: 767px) 480px, 100vw"
                   />
                   <div class="project__overlay">
                     <p class="project__description">
@@ -228,16 +223,16 @@
                   <img
                     class="project__img"
                     srcset="
-                      ./images/portfolio/project3_tab1x.jpg     354w,
-                      ./images/portfolio/project3_desctop1x.jpg 370w,
-                      ./images/portfolio/project3_mobl1x.jpg    450w,
-                      ./images/portfolio/project3_tab2x.jpg     708w,
-                      ./images/portfolio/project3_desctop2x.jpg 740w,
-                      ./images/portfolio/project3_mobl2x.jpg    900w
+                      ./images/portfolio/project3_mobl1x.jpg    480w,
+                      ./images/portfolio/project3_mobl2x.jpg    960w,
+                      ./images/portfolio/project3_tab1x.jpg     384w,
+                      ./images/portfolio/project3_tab2x.jpg     768w,
+                      ./images/portfolio/project3_desctop1x.jpg 400w,
+                      ./images/portfolio/project3_desctop2x.jpg 800w
                     "
-                    src="./images/portfolio/project3_desctop1x.jpg"
+                    src="./images/portfolio/project3_mobl1x.jpg"
                     alt="Напис назви ресторану чорними літерами на фоні сірого силуету риби"
-                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 384px, (max-width: 767px) 480px, 100vw"
                   />
                   <div class="project__overlay">
                     <p class="project__description">
@@ -261,16 +256,16 @@
                   <img
                     class="project__img"
                     srcset="
-                      ./images/portfolio/project4_tab1x.jpg     354w,
-                      ./images/portfolio/project4_desctop1x.jpg 370w,
-                      ./images/portfolio/project4_mobl1x.jpg    450w,
-                      ./images/portfolio/project4_tab2x.jpg     708w,
-                      ./images/portfolio/project4_desctop2x.jpg 740w,
-                      ./images/portfolio/project4_mobl2x.jpg    900w
+                      ./images/portfolio/project4_mobl1x.jpg    480w,
+                      ./images/portfolio/project4_mobl2x.jpg    960w,
+                      ./images/portfolio/project4_tab1x.jpg     384w,
+                      ./images/portfolio/project4_tab2x.jpg     768w,
+                      ./images/portfolio/project4_desctop1x.jpg 400w,
+                      ./images/portfolio/project4_desctop2x.jpg 800w
                     "
-                    src="./images/portfolio/project4_desctop1x.jpg"
+                    src="./images/portfolio/project4_mobl1x.jpg"
                     alt="Великі чорні навушники"
-                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 384px, (max-width: 767px) 480px, 100vw"
                   />
                   <div class="project__overlay">
                     <p class="project__description">
@@ -294,16 +289,16 @@
                   <img
                     class="project__img"
                     srcset="
-                      ./images/portfolio/project5_tab1x.jpg     354w,
-                      ./images/portfolio/project5_desctop1x.jpg 370w,
-                      ./images/portfolio/project5_mobl1x.jpg    450w,
-                      ./images/portfolio/project5_tab2x.jpg     708w,
-                      ./images/portfolio/project5_desctop2x.jpg 740w,
-                      ./images/portfolio/project5_mobl2x.jpg    900w
+                      ./images/portfolio/project5_mobl1x.jpg    480w,
+                      ./images/portfolio/project5_mobl2x.jpg    960w,
+                      ./images/portfolio/project5_tab1x.jpg     384w,
+                      ./images/portfolio/project5_tab2x.jpg     768w,
+                      ./images/portfolio/project5_desctop1x.jpg 400w,
+                      ./images/portfolio/project5_desctop2x.jpg 800w
                     "
-                    src="./images/portfolio/project5_desctop1x.jpg"
+                    src="./images/portfolio/project5_mobl1x.jpg"
                     alt="Біла велика та рожева маленька фірмові коробки"
-                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 384px, (max-width: 767px) 480px, 100vw"
                   />
                   <div class="project__overlay">
                     <p class="project__description">
@@ -326,16 +321,16 @@
                   <img
                     class="project__img"
                     srcset="
-                      ./images/portfolio/project6_tab1x.jpg     354w,
-                      ./images/portfolio/project6_desctop1x.jpg 370w,
-                      ./images/portfolio/project6_mobl1x.jpg    450w,
-                      ./images/portfolio/project6_tab2x.jpg     708w,
-                      ./images/portfolio/project6_desctop2x.jpg 740w,
-                      ./images/portfolio/project6_mobl2x.jpg    900w
+                      ./images/portfolio/project6_mobl1x.jpg    480w,
+                      ./images/portfolio/project6_mobl2x.jpg    960w,
+                      ./images/portfolio/project6_tab1x.jpg     384w,
+                      ./images/portfolio/project6_tab2x.jpg     768w,
+                      ./images/portfolio/project6_desctop1x.jpg 400w,
+                      ./images/portfolio/project6_desctop2x.jpg 800w
                     "
-                    src="./images/portfolio/project6_desctop1x.jpg"
+                    src="./images/portfolio/project6_mobl1x.jpg"
                     alt="Чорний моноблок із відкритою сторінкою веб-сайту"
-                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 384px, (max-width: 767px) 480px, 100vw"
                   />
                   <div class="project__overlay">
                     <p class="project__description">
@@ -359,16 +354,16 @@
                   <img
                     class="project-img"
                     srcset="
-                      ./images/portfolio/project7_tab1x.jpg     354w,
-                      ./images/portfolio/project7_desctop1x.jpg 370w,
-                      ./images/portfolio/project7_mobl1x.jpg    450w,
-                      ./images/portfolio/project7_tab2x.jpg     708w,
-                      ./images/portfolio/project7_desctop2x.jpg 740w,
-                      ./images/portfolio/project7_mobl2x.jpg    900w
+                      ./images/portfolio/project7_mobl1x.jpg    480w,
+                      ./images/portfolio/project7_mobl2x.jpg    960w,
+                      ./images/portfolio/project7_tab1x.jpg     384w,
+                      ./images/portfolio/project7_tab2x.jpg     768w,
+                      ./images/portfolio/project7_desctop1x.jpg 400w,
+                      ./images/portfolio/project7_desctop2x.jpg 800w
                     "
-                    src="./images/portfolio/project7_desctop1x.jpg"
+                    src="./images/portfolio/project7_mobl1x.jpg"
                     alt="Розворот друкованого видання з фотографіями"
-                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 384px, (max-width: 767px) 480px, 100vw"
                   />
                   <div class="project__overlay">
                     <p class="project__description">
@@ -391,16 +386,16 @@
                   <img
                     class="project-img"
                     srcset="
-                      ./images/portfolio/project8_tab1x.jpg     354w,
-                      ./images/portfolio/project8_desctop1x.jpg 370w,
-                      ./images/portfolio/project8_mobl1x.jpg    450w,
-                      ./images/portfolio/project8_tab2x.jpg     708w,
-                      ./images/portfolio/project8_desctop2x.jpg 740w,
-                      ./images/portfolio/project8_mobl2x.jpg    900w
+                      ./images/portfolio/project8_mobl1x.jpg    480w,
+                      ./images/portfolio/project8_mobl2x.jpg    960w,
+                      ./images/portfolio/project8_tab1x.jpg     384w,
+                      ./images/portfolio/project8_tab2x.jpg     768w,
+                      ./images/portfolio/project8_desctop1x.jpg 400w,
+                      ./images/portfolio/project8_desctop2x.jpg 800w
                     "
-                    src="./images/portfolio/project8_desctop1x.jpg"
+                    src="./images/portfolio/project8_mobl1x.jpg"
                     alt="Біла бірка з написом торгової марки чорними літерами"
-                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 384px, (max-width: 767px) 480px, 100vw"
                   />
                   <div class="project__overlay">
                     <p class="project__description">
@@ -424,16 +419,16 @@
                   <img
                     class="project-img"
                     srcset="
-                      ./images/portfolio/project9_tab1x.jpg     354w,
-                      ./images/portfolio/project9_desctop1x.jpg 370w,
-                      ./images/portfolio/project9_mobl1x.jpg    450w,
-                      ./images/portfolio/project9_tab2x.jpg     708w,
-                      ./images/portfolio/project9_desctop2x.jpg 740w,
-                      ./images/portfolio/project9_mobl2x.jpg    900w
+                      ./images/portfolio/project9_mobl1x.jpg    480w,
+                      ./images/portfolio/project9_mobl2x.jpg    960w,
+                      ./images/portfolio/project9_tab1x.jpg     384w,
+                      ./images/portfolio/project9_tab2x.jpg     768w,
+                      ./images/portfolio/project9_desctop1x.jpg 400w,
+                      ./images/portfolio/project9_desctop2x.jpg 800w
                     "
-                    src="./images/portfolio/project9_desctop1x.jpg"
+                    src="./images/portfolio/project9_mobl1x.jpg"
                     alt="Сірий ноутбук із зображенням сторінки веб-сайту та руки що працюють на клавіатурі"
-                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 384px, (max-width: 767px) 480px, 100vw"
                   />
                   <div class="project__overlay">
                     <p class="project__description">
