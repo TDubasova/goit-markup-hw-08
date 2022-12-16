@@ -3,7 +3,9 @@
         display: none;
     }
     
+    max-width: 1200px;
     padding-bottom: 94px;
+    margin: auto;
 
     &__title {
         margin-bottom: 50px;
@@ -12,14 +14,13 @@
     &__list {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin: -15px;
     }
 
     &__item {
         position: relative;
-
-        &:not(:last-child) {
-        margin-right: 30px;
-        }
+        margin: 15px;
     }
 
     &__imaging {

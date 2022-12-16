@@ -306,19 +306,19 @@ ul {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    min-width: 1200px;
   }
 }
 
@@ -665,16 +665,18 @@ ul {
   position: absolute;
   top: 10px;
   right: 15px;
-  z-index: 3;
 }
 .menu__icon:hover, .menu__icon:focus {
   fill: #2196f3;
+}
+.menu__button.is-open .menu__icon {
+  position: fixed;
+  z-index: 3;
 }
 
 .menu__button .menu__close {
   display: none;
 }
-
 .menu__button.is-open .menu__close {
   display: block;
 }
@@ -818,7 +820,7 @@ ul {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 480px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .herou__container {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Herou_mobl2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Herou_mobl2x.jpg);
@@ -1326,7 +1328,9 @@ ul {
 }
 
 .activities {
+  max-width: 1200px;
   padding-bottom: 94px;
+  margin: auto;
 }
 @media screen and (max-width: 1199px) {
   .activities {
@@ -1343,12 +1347,14 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -15px;
 }
 .activities__item {
   position: relative;
-}
-.activities__item:not(:last-child) {
-  margin-right: 30px;
+  margin: 15px;
 }
 .activities__imaging {
   display: block;
@@ -1970,9 +1976,13 @@ ul {
 .project__content {
   position: relative;
   width: 100%;
-  height: 100%;
   overflow: hidden;
   z-index: -1;
+}
+@media screen and (min-width: 480px) {
+  .project__content {
+    height: 294px;
+  }
 }
 @media screen and (min-width: 768px) {
   .project__content {
@@ -1983,6 +1993,10 @@ ul {
   .project__content {
     width: 370px;
   }
+}
+
+.project__img {
+  height: 100%;
 }
 
 .project__overlay {
@@ -2011,7 +2025,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .project__overlay {
-    padding: 25px;
+    padding: 63px 24px;
   }
 }
 

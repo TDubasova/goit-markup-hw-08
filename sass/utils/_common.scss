@@ -41,16 +41,16 @@ ul {
     padding-left: 15px;
     
     @media screen and (min-width: 480px) {
-        width: 480px;
+        max-width: 480px;
         margin-left: auto;
         margin-right: auto;
     }
     @media screen and (min-width: 768px) {
-        width: 768px;    
+        max-width: 768px;    
     }
     
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+        min-width: 1200px;
     }
 }
 
