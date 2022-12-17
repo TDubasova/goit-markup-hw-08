@@ -1944,14 +1944,12 @@ ul {
 }
 
 .project {
-  height: 404px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .project {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
-    height: 440px;
     margin: 15px;
   }
 }
@@ -1983,6 +1981,11 @@ ul {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+@media screen and (min-width: 480px) {
+  .project__link {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
   .project__link {
     width: 354px;
@@ -1997,6 +2000,7 @@ ul {
 .project__content {
   position: relative;
   width: 100%;
+  height: 73%;
   overflow: hidden;
   z-index: -1;
 }
@@ -2005,19 +2009,14 @@ ul {
     height: 294px;
   }
 }
-@media screen and (min-width: 768px) {
-  .project__content {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .project__content {
-    width: 370px;
-  }
-}
 
 .project__img {
   height: 100%;
+}
+@media screen and (min-width: 480px) {
+  .project__img {
+    height: 294px;
+  }
 }
 
 .project__overlay {
@@ -2054,7 +2053,13 @@ ul {
   color: #ffffff;
   letter-spacing: 0.03em;
   font-weight: 400;
-  font-size: calc(14px + 0.3333333333vw);
+  font-size: calc(12px + 0.5vw);
+}
+@media screen and (min-width: 370px) {
+  .project__description {
+    font-size: calc(14px + 0.3333333333vw);
+    line-height: 1.56;
+  }
 }
 @media screen and (min-width: 480px) {
   .project__description {
@@ -2066,9 +2071,6 @@ ul {
 
 .project__annotation {
   padding: 5% 6%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -2076,6 +2078,13 @@ ul {
 @media screen and (min-width: 480px) {
   .project__annotation {
     padding: 20px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project__annotation {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 
