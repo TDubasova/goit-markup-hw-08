@@ -90,7 +90,6 @@
 
     @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 4 * 15px) / 2);
-        // height: 440px;
         margin: 15px;
     }
 
@@ -138,14 +137,6 @@
     @media screen and (min-width: 480px) {
         height: 294px;
     }
-
-    // @media screen and (min-width: 768px) {
-    //     width: 354px;
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //     width: 370px;
-    // }
 }
 
 .project__img {
@@ -171,7 +162,6 @@
     }
 
     @media screen and (min-width: 480px) {
-        // height: 294px;
         padding: 77px 24px;
     }
 
