@@ -25,6 +25,8 @@
     }
 }
 
+
+
 .footer__contacts {
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -46,13 +48,19 @@
     }
 }
 
+.footer__item:not(:last-child) {
+    margin-bottom: 8px;
+    
+    @media screen and (min-width: 1200px) {
+            margin-bottom: 9px;
+    }
+}
+
+
 .footer__address {
-    margin-bottom: 9px;
     color: $body-color;
     font-style: normal;
-
     @extend %font-size14;
-    
     transition: $color;
 
     &:hover,
@@ -63,9 +71,7 @@
 
 .footer__link {
     color: #ffffff60;
-    
     @extend %font-size14;   
-    
     transition: $color;
 
     &:not(:last-child) {
@@ -89,7 +95,6 @@
 .footer__invitation {
     margin-bottom: 20px;
     line-height: 0.88;
-
     @extend %font-uppercase;
 }
 

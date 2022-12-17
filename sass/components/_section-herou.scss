@@ -1,45 +1,45 @@
 .herou {
-    text-align: center; 
-}
-
-.herou__container {
-    height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;  
+    text-align: center;
     background-color: $footer-color;
     background-image:
         linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/Herou_mobl1x.jpg);   
+        url(../images/Herou_mobl1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     @media screen and (min-width: 768px) {
         background-image:
-            linear-gradient(to right,
+        linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
             url(../images/Herou_tab1x.jpg);
     }
 
     @media screen and (min-width: 1200px) {
-        max-width: 1600px;
-        height: 600px;
-        padding: 200px 0;
-        background-image:
-            linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url(../images/Herou_desctop1x.jpg);
+    background-image:
+        linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/Herou_desctop1x.jpg);
+    }
+}
+
+.herou__container {
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    @media screen and (min-width: 1200px) {
+            height: 600px;
+            padding: 200px 0;
     }
 }
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .herou__container {
+    .herou {
         @media screen and (max-width: 767px) {
                 background-image:
                     linear-gradient(to right,
@@ -53,7 +53,7 @@
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .herou__container {
+    .herou {
         @media screen and (min-width: 768px) and (max-width: 1199px) {
                 background-image:
                     linear-gradient(to right,
@@ -67,7 +67,7 @@
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .herou__container {
+    .herou {
         @media screen and (min-width: 1200px) {
             background-image:
                 linear-gradient(to right,
