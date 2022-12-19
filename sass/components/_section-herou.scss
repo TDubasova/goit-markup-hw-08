@@ -1,4 +1,5 @@
 .herou {
+    margin: 0 auto;
     text-align: center;
     background-color: $footer-color;
     background-image:
@@ -18,6 +19,7 @@
     }
 
     @media screen and (min-width: 1200px) {
+        max-width: 1600px;
     background-image:
         linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
